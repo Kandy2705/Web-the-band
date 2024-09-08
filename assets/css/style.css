@@ -333,6 +333,7 @@ html{
     padding: 10px 16px;
     float: right;
     cursor: pointer;
+    -webkit-appearance: none;
 }
 .contact-form .form-submit:hover{
     background: #ccc;
