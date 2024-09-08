@@ -1,0 +1,90 @@
+@media(min-width: 740px) and (max-width: 1023px){
+    #content .content-section{
+        max-width: 100%;
+        padding-left: 16px ;
+        padding-right: 16px;
+    }
+    .modal-container{
+        max-width: 90%;
+    }
+}
+
+
+@media(max-width: 739px){
+    #nav{
+        display: block;
+    }
+
+    #nav > li{
+        display: block;
+    }
+    #nav .subnav{
+        position: initial;
+        background: #333;
+        
+    }
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 41px;
+    }
+    #header{
+        /* height: auto; */
+        overflow: hidden;
+    }
+
+    #header .search{
+        display: none;
+    }
+
+    #header .mobile-menu{
+        float:right;
+        padding: 13px 20px;
+        color: white;
+        border: none ;
+        position: absolute;
+        top: 0;
+        right:0;
+        display: block;
+    }
+    #header .mobile-menu:hover{
+        background: #ccc;
+        color:black;
+    }
+    .s-full-width{
+        width:100% !important;
+    }
+    .s-mt-8{
+        margin-top: 8px;
+    }
+    .col-third{
+        width: 100%;
+    }
+    .col{
+        float: none;
+    }
+    .contact-info{
+        margin-bottom: 16px;
+    }
+    .col-half{
+        width: 100%;
+    }
+    .m-col-full{
+        width: 100%;
+        
+    }
+    #content .content-section{
+        max-width: 100%;
+        padding-left: 16px ;
+        padding-right: 16px;
+    }
+    .khoang-trong{
+        padding-bottom: 16px;
+    }
+    #content .member-img{
+        width: 60%;
+        padding-bottom: 32px;
+    }
+    .modal-container{
+        max-width: 90%;
+    }
+}

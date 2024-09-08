@@ -7,6 +7,7 @@
     <title>Web của Triệu Mẫn</title>
     <link rel="icon" href="./assets/img/favicon Icon - Free PNG & SVG 5265769 - Noun Project_files/1623608-200.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More  
                         <i class=" nav-dow ti-arrow-circle-down"></i>
                     </a>
@@ -31,6 +32,10 @@
             </ul>
             <div class="search">
                 <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id ="menu-mobile-1" class="mobile-menu">
+                <i class="ti-menu"></i>
             </div>
         </div>
 
@@ -49,18 +54,19 @@
                 <p class="about-text">
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <div class="menber-list">
-                    <div class="menber-item">
+                <div class="row menber-list">
+                    <div class="col col-third text-center">
+                        <!-- menber-item -->
                         <p class="member-name">Man</p>
                         <img src='/assets/img/menber1.jpg' alt="Man" class="member-img">
                     </div>
 
-                    <div class="menber-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Man</p>
                         <img src='/assets/img/menber2.jpg' alt="Man" class="member-img">
                     </div>
 
-                    <div class="menber-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Man</p>
                         <img src='/assets/img/menber3.jpg' alt="Man" class="member-img">
                     </div>
@@ -80,33 +86,33 @@
                     <!-- dia diem -->
                     <div class="row places-list">
                         <!-- New York -->
-                        <div class="col col-third">
+                        <div class="khoang-trong col col-third">
                             <img src="./assets/img/newyork.jpg" alt="New york" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button  class="place-buy js-buy-ticket">Buy Tickets</button>
+                                <button  class="place-buy js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
                         <!-- Paris -->
-                        <div class="col col-third">
+                        <div class="khoang-trong col col-third">
                             <img src="./assets/img/paris.jpg" alt="Paris" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button  class="place-buy js-buy-ticket">Buy Tickets</button>
+                                <button  class="place-buy js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
                         <!-- San Francisco -->
-                        <div class="col col-third">
+                        <div class="khoang-trong col col-third">
                             <img src="./assets/img/sanfran.jpg" alt="San Francisco" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button  class="place-buy js-buy-ticket">Buy Tickets</button>
+                                <button  class="place-buy js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -122,7 +128,7 @@
                 <p class="section-sub">Fan? Drop a note!</p>
                 <div class="row contact-content">
 
-                    <div class="col col-half contact-info">
+                    <div class="col col-half m-col-full contact-info">
                         <p><i class="ti-location-pin"></i>Chicago, Us</p>
                         <p><i class="ti-mobile"></i>Phone: +00 151515</p>
                         <p><i class="ti-email"></i>Email: mail@mail.com</p>
@@ -132,10 +138,10 @@
                     <div class="col col-half contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half m-col-full">
                                     <input type="text" name="" placeholder="Name" required id="" class="form-control">
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half m-col-full s-mt-8">
                                     <input type="email" name="" placeholder="Email" required id="" class="form-control">
                                 </div>
                                 
@@ -145,7 +151,8 @@
                                     <input type="text" name="" placeholder="Message" required id="" class="form-control">
                                 </div>
                             </div>
-                            <input class=" form-submit mt-16" type="submit" value="SEND">
+
+                            <input class=" form-submit mt-16 s-full-width" type="submit" value="SEND">
                         </form>
                     </div>
 
@@ -229,6 +236,42 @@
         modalContai.addEventListener('click', function(event){
             event.stopPropagation()
         })// ngang chan click vao ben trong bi out ra
+
+        // Mobile
+
+        var header =document.getElementById('header');
+        var mobileMenu=document.getElementById('menu-mobile-1');
+        mobileMenu.onclick = function(){
+            var isClosed = header.clientHeight === 46 ;// so sanh ==
+            if(isClosed){
+                header.style.height= 'auto';
+            }else{
+                header.style.height='46px';
+            }
+        }
+        // khi click vao id do 
+
+        //dong mo khi bam vao menu
+        var menuItems =document.querySelectorAll('#nav li a[href*="#"]');
+        for(var i = 0; i < menuItems.length; i++){
+            var menuItem = menuItems[i];     
+            
+
+            menuItem.onclick = function(){
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                // this o day la chi thang nhan vao
+                // kiem tra co anh chi em lien ke khong va co chi em lien ke la subnav
+                if(!isParentMenu){
+                    header.style.height='46px';
+                }else{
+                    event.preventDefault();
+                    header.style.position='none';
+                    //bo qua cai mac dinh
+                }
+            }
+        }
+
+
     </script>
 </body>
 </html>

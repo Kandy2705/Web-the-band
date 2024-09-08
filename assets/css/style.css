@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif, Helvetica, sans-serif;
     scroll-behavior: smooth; 
     /* hanh dong truoc len */
 }
@@ -20,6 +20,10 @@ html{
     content: "";
     display: block;
     clear: both;
+}
+.text-center{
+    text-align: center;
+
 }
 .col{
     float: left;
@@ -63,6 +67,7 @@ html{
     left:0;
     z-index: 1;
 }
+
 #nav{
     display: inline-block;
 }
@@ -70,6 +75,9 @@ html{
     list-style-type: none;
 }
 #nav > li{
+    display: inline-block;
+}
+#nav > li:first-child{
     display: inline-block;
 }
 #nav li{
@@ -130,6 +138,9 @@ html{
     color:aliceblue;
     font-size: 20px;
     line-height: 46px;
+}
+#header .mobile-menu{
+    display: none;
 }
 #slider{
     margin-top: 46px;
